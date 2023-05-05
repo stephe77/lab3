@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Abbasaliev - Lab 3</title>
+</head>
+
+<body>
+    <header>
+        <h1>Для регистрации нажмите кнопку</h1>
+        <button class="buttonH1" id="registrationButton">Регистрация</button>
+        <form id="registrationForm" hidden>
+            <fieldset>
+                <legend>Регистрация</legend>
+                <p class="text-field__icon">
+                    <label>E-mail: <input class="text-field__input" type="email" name="email" id="emailInput" required>
+                    </label>
+                </p>
+                <p class="text-field__icon">
+                    <label>Пароль:
+                        <input class="text-field__input" type="password" id="passwordInput" name="password"
+                            minlength="6" maxlength="28" placeholder="от 6 до 28 символов" required>
+                            <button type="button" id="showPasswordButton">Показать</button>
+                    </label>
+                </p>
+                <button type="submit" id="loginButton">ОТПРАВИТЬ</button>
+                <p class="form_error_email" id="errorText_email" hidden></p>
+                <p class="form_error" id="errorText" hidden></p>
+            </fieldset>
+        </form>
+    </header>
+    <script src="main.js"></script>
+</body>
+
+</html>
